@@ -1,0 +1,63 @@
+INFO  20:47:45,505 HelpFormatter - ------------------------------------------------------------------------------------ 
+INFO  20:47:45,508 HelpFormatter - The Genome Analysis Toolkit (GATK) v3.8-1-0-gf15c1c3ef, Compiled 2018/02/19 05:43:50 
+INFO  20:47:45,508 HelpFormatter - Copyright (c) 2010-2016 The Broad Institute 
+INFO  20:47:45,508 HelpFormatter - For support and documentation go to https://software.broadinstitute.org/gatk 
+INFO  20:47:45,508 HelpFormatter - [Fri Jun 05 20:47:45 CST 2020] Executing on Linux 2.6.32-358.el6.x86_64 amd64 
+INFO  20:47:45,509 HelpFormatter - Java HotSpot(TM) 64-Bit Server VM 1.8.0_101-b13 
+INFO  20:47:45,513 HelpFormatter - Program Args: -T GenotypeGVCFs -R /data/szj/software/gatk3.8/Homo_sapiens_assembly38.fasta -V /data/szj/1000C/16BD45807114.g.vcf.gz -V /data/szj/1000C/16BD45807514.g.vcf.gz -V /data/szj/1000C/16BD45807714.g.vcf.gz -V /data/szj/1000C/16BD45808014.g.vcf.gz -V /data/szj/1000C/16BD45808614.g.vcf.gz -L /data/szj/software/gatk3.8/interval_test/300GATK/00intervals/file51.intervals -o /data/szj/software/gatk3.8/interval_test/300GATK/011vcfs_intervals_result//5file51.intervalsGenotypeGVCFs.vcf 
+INFO  20:47:45,517 HelpFormatter - Executing as xtlyszj@node19 on Linux 2.6.32-358.el6.x86_64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_101-b13. 
+INFO  20:47:45,517 HelpFormatter - Date/Time: 2020/06/05 20:47:45 
+INFO  20:47:45,518 HelpFormatter - ------------------------------------------------------------------------------------ 
+INFO  20:47:45,518 HelpFormatter - ------------------------------------------------------------------------------------ 
+INFO  20:47:45,574 NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/data/szj/software/gatk3.8/GenomeAnalysisTK.jar!/com/intel/gkl/native/libgkl_compression.so 
+INFO  20:47:45,601 GenomeAnalysisEngine - Deflater: IntelDeflater 
+INFO  20:47:45,601 GenomeAnalysisEngine - Inflater: IntelInflater 
+INFO  20:47:45,605 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  20:47:47,422 GenomeAnalysisEngine - Downsampling Settings: Method: BY_SAMPLE, Target Coverage: 1000 
+INFO  20:47:49,960 IntervalUtils - Processing 60000000 bp from intervals 
+WARN  20:47:49,972 IndexDictionaryUtils - Track variant doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  20:47:49,972 IndexDictionaryUtils - Track variant2 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  20:47:49,972 IndexDictionaryUtils - Track variant3 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  20:47:49,972 IndexDictionaryUtils - Track variant4 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  20:47:49,973 IndexDictionaryUtils - Track variant5 doesn't have a sequence dictionary built in, skipping dictionary validation 
+INFO  20:47:50,073 GenomeAnalysisEngine - Preparing for traversal 
+INFO  20:47:50,075 GenomeAnalysisEngine - Done preparing for traversal 
+INFO  20:47:50,076 ProgressMeter - [INITIALIZATION COMPLETE; STARTING PROCESSING] 
+INFO  20:47:50,076 ProgressMeter -                 | processed |    time |    per 1M |           |   total | remaining 
+INFO  20:47:50,077 ProgressMeter -        Location |     sites | elapsed |     sites | completed | runtime |   runtime 
+WARN  20:47:50,380 StrandBiasTest - StrandBiasBySample annotation exists in input VCF header. Attempting to use StrandBiasBySample values to calculate strand bias annotation values. If no sample has the SB genotype annotation, annotation may still fail. 
+WARN  20:47:50,380 InbreedingCoeff - Annotation will not be calculated. InbreedingCoeff requires at least 10 unrelated samples. 
+WARN  20:47:50,381 StrandBiasTest - StrandBiasBySample annotation exists in input VCF header. Attempting to use StrandBiasBySample values to calculate strand bias annotation values. If no sample has the SB genotype annotation, annotation may still fail. 
+INFO  20:47:50,381 GenotypeGVCFs - Notice that the -ploidy parameter is ignored in GenotypeGVCFs tool as this is automatically determined by the input variant files 
+WARN  20:47:51,199 HaplotypeScore - Annotation will not be calculated, must be called from UnifiedGenotyper, not GenotypeGVCFs 
+INFO  20:48:21,244 ProgressMeter -  chrX:125409579         0.0    30.0 s      50.4 w        0.7%    73.0 m      72.5 m 
+INFO  20:48:51,478 ProgressMeter -  chrX:125447479         0.0    61.0 s     101.5 w        0.7%     2.3 h       2.2 h 
+INFO  20:49:21,479 ProgressMeter -  chrX:125488079         0.0    91.0 s     151.1 w        0.8%     3.1 h       3.1 h 
+INFO  20:49:51,925 ProgressMeter -  chrX:125998379         0.0     2.0 m     201.5 w        1.7%     2.0 h     119.0 m 
+INFO  20:50:21,930 ProgressMeter -  chrX:126190779   1000000.0     2.5 m       2.5 m        2.0%     2.1 h       2.1 h 
+INFO  20:50:51,935 ProgressMeter -  chrX:126315879   1000000.0     3.0 m       3.0 m        2.2%     2.3 h       2.2 h 
+INFO  20:51:21,939 ProgressMeter -  chrX:126433979   1000000.0     3.5 m       3.5 m        2.4%     2.4 h       2.4 h 
+WARN  20:51:35,348 ExactAFCalculator - This tool is currently set to genotype at most 6 alternate alleles in a given context, but the context at chrX: 127086730 has 7 alternate alleles so only the top alleles will be used; see the --max_alternate_alleles argument. Unless the DEBUG logging level is used, this warning message is output just once per run and further warnings are suppressed. 
+INFO  20:51:51,944 ProgressMeter -  chrX:127834279   2000000.0     4.0 m     120.0 s        4.7%    85.0 m      81.0 m 
+INFO  20:52:21,948 ProgressMeter -  chrX:128355479   3000000.0     4.5 m      90.0 s        5.6%    80.7 m      76.2 m 
+INFO  20:52:51,953 ProgressMeter -  chrX:130124379   5000000.0     5.0 m      60.0 s        8.5%    58.7 m      53.7 m 
+INFO  20:53:21,954 ProgressMeter -  chrX:131430179   6000000.0     5.5 m      55.0 s       10.7%    51.5 m      45.9 m 
+INFO  20:53:51,990 ProgressMeter -  chrX:132145379   7000000.0     6.0 m      51.0 s       11.9%    50.5 m      44.5 m 
+INFO  20:54:21,994 ProgressMeter -  chrX:133569679   8000000.0     6.5 m      48.0 s       14.3%    45.6 m      39.1 m 
+INFO  20:54:51,996 ProgressMeter -  chrX:135456479       1.0E7     7.0 m      42.0 s       17.4%    40.3 m      33.2 m 
+INFO  20:55:22,001 ProgressMeter -  chrX:137455979       1.2E7     7.5 m      37.0 s       20.8%    36.2 m      28.7 m 
+INFO  20:55:52,003 ProgressMeter -  chrX:139335679       1.4E7     8.0 m      34.0 s       23.9%    33.5 m      25.5 m 
+INFO  20:56:22,004 ProgressMeter -  chrX:141257079       1.6E7     8.5 m      31.0 s       27.1%    31.4 m      22.9 m 
+INFO  20:56:52,005 ProgressMeter -  chrX:143181679       1.8E7     9.0 m      30.0 s       30.3%    29.8 m      20.7 m 
+INFO  20:57:22,006 ProgressMeter -  chrX:145085979       2.0E7     9.5 m      28.0 s       33.5%    28.4 m      18.9 m 
+INFO  20:57:52,008 ProgressMeter -  chrX:146938779       2.1E7    10.0 m      28.0 s       36.6%    27.4 m      17.4 m 
+INFO  20:58:22,010 ProgressMeter -  chrX:148846779       2.3E7    10.5 m      27.0 s       39.7%    26.5 m      15.9 m 
+INFO  20:58:52,011 ProgressMeter -  chrX:150816379       2.5E7    11.0 m      26.0 s       43.0%    25.6 m      14.6 m 
+INFO  20:59:22,013 ProgressMeter -  chrX:152605579       2.7E7    11.5 m      25.0 s       46.0%    25.0 m      13.5 m 
+INFO  20:59:52,014 ProgressMeter -  chrX:154438679       2.9E7    12.0 m      24.0 s       49.1%    24.5 m      12.5 m 
+INFO  21:00:22,015 ProgressMeter -    chrY:3230101   3.4042417E7    12.5 m      22.0 s       57.1%    21.9 m       9.4 m 
+INFO  21:00:52,016 ProgressMeter -   chrY:13822501   4.4042417E7    13.0 m      17.0 s       74.8%    17.4 m       4.4 m 
+INFO  21:01:17,486 ProgressMeter -            done       6.0E7    13.5 m      13.0 s      100.0%    13.5 m       0.0 s 
+INFO  21:01:17,486 ProgressMeter - Total runtime 807.41 secs, 13.46 min, 0.22 hours 
+------------------------------------------------------------------------------------------
+Done. ------------------------------------------------------------------------------------------

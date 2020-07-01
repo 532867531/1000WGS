@@ -1,0 +1,92 @@
+INFO  20:45:22,159 HelpFormatter - ------------------------------------------------------------------------------------ 
+INFO  20:45:22,162 HelpFormatter - The Genome Analysis Toolkit (GATK) v3.8-1-0-gf15c1c3ef, Compiled 2018/02/19 05:43:50 
+INFO  20:45:22,162 HelpFormatter - Copyright (c) 2010-2016 The Broad Institute 
+INFO  20:45:22,162 HelpFormatter - For support and documentation go to https://software.broadinstitute.org/gatk 
+INFO  20:45:22,162 HelpFormatter - [Fri Jun 05 20:45:22 CST 2020] Executing on Linux 2.6.32-358.el6.x86_64 amd64 
+INFO  20:45:22,163 HelpFormatter - Java HotSpot(TM) 64-Bit Server VM 1.8.0_101-b13 
+INFO  20:45:22,166 HelpFormatter - Program Args: -T GenotypeGVCFs -R /data/szj/software/gatk3.8/Homo_sapiens_assembly38.fasta -V /data/szj/1000C/16BD45807114.g.vcf.gz -V /data/szj/1000C/16BD45807514.g.vcf.gz -V /data/szj/1000C/16BD45807714.g.vcf.gz -V /data/szj/1000C/16BD45808014.g.vcf.gz -V /data/szj/1000C/16BD45808614.g.vcf.gz -L /data/szj/software/gatk3.8/interval_test/300GATK/00intervals/file17.intervals -o /data/szj/software/gatk3.8/interval_test/300GATK/011vcfs_intervals_result//5file17.intervalsGenotypeGVCFs.vcf 
+INFO  20:45:22,169 HelpFormatter - Executing as xtlyszj@node19 on Linux 2.6.32-358.el6.x86_64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_101-b13. 
+INFO  20:45:22,169 HelpFormatter - Date/Time: 2020/06/05 20:45:22 
+INFO  20:45:22,169 HelpFormatter - ------------------------------------------------------------------------------------ 
+INFO  20:45:22,169 HelpFormatter - ------------------------------------------------------------------------------------ 
+INFO  20:45:22,205 NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/data/szj/software/gatk3.8/GenomeAnalysisTK.jar!/com/intel/gkl/native/libgkl_compression.so 
+INFO  20:45:22,218 GenomeAnalysisEngine - Deflater: IntelDeflater 
+INFO  20:45:22,218 GenomeAnalysisEngine - Inflater: IntelInflater 
+INFO  20:45:22,219 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  20:45:23,389 GenomeAnalysisEngine - Downsampling Settings: Method: BY_SAMPLE, Target Coverage: 1000 
+INFO  20:45:25,105 IntervalUtils - Processing 60000000 bp from intervals 
+WARN  20:45:25,107 IndexDictionaryUtils - Track variant doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  20:45:25,107 IndexDictionaryUtils - Track variant2 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  20:45:25,108 IndexDictionaryUtils - Track variant3 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  20:45:25,108 IndexDictionaryUtils - Track variant4 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  20:45:25,109 IndexDictionaryUtils - Track variant5 doesn't have a sequence dictionary built in, skipping dictionary validation 
+INFO  20:45:25,166 GenomeAnalysisEngine - Preparing for traversal 
+INFO  20:45:25,167 GenomeAnalysisEngine - Done preparing for traversal 
+INFO  20:45:25,167 ProgressMeter - [INITIALIZATION COMPLETE; STARTING PROCESSING] 
+INFO  20:45:25,167 ProgressMeter -                 | processed |    time |    per 1M |           |   total | remaining 
+INFO  20:45:25,167 ProgressMeter -        Location |     sites | elapsed |     sites | completed | runtime |   runtime 
+WARN  20:45:25,339 StrandBiasTest - StrandBiasBySample annotation exists in input VCF header. Attempting to use StrandBiasBySample values to calculate strand bias annotation values. If no sample has the SB genotype annotation, annotation may still fail. 
+WARN  20:45:25,340 InbreedingCoeff - Annotation will not be calculated. InbreedingCoeff requires at least 10 unrelated samples. 
+WARN  20:45:25,340 StrandBiasTest - StrandBiasBySample annotation exists in input VCF header. Attempting to use StrandBiasBySample values to calculate strand bias annotation values. If no sample has the SB genotype annotation, annotation may still fail. 
+INFO  20:45:25,341 GenotypeGVCFs - Notice that the -ploidy parameter is ignored in GenotypeGVCFs tool as this is automatically determined by the input variant files 
+WARN  20:45:25,845 HaplotypeScore - Annotation will not be calculated, must be called from UnifiedGenotyper, not GenotypeGVCFs 
+WARN  20:45:33,877 ExactAFCalculator - This tool is currently set to genotype at most 6 alternate alleles in a given context, but the context at chr5: 80729430 has 11 alternate alleles so only the top alleles will be used; see the --max_alternate_alleles argument. Unless the DEBUG logging level is used, this warning message is output just once per run and further warnings are suppressed. 
+INFO  20:45:55,171 ProgressMeter -   chr5:82038536   1000000.0    30.0 s      30.0 s        2.8%    17.7 m      17.2 m 
+INFO  20:46:25,172 ProgressMeter -   chr5:84014136   3000000.0    60.0 s      20.0 s        6.1%    16.3 m      15.3 m 
+INFO  20:46:55,174 ProgressMeter -   chr5:85625136   5000000.0    90.0 s      18.0 s        8.8%    17.0 m      15.5 m 
+INFO  20:47:25,176 ProgressMeter -   chr5:87297736   6000000.0   120.0 s      20.0 s       11.6%    17.2 m      15.2 m 
+INFO  20:47:55,178 ProgressMeter -   chr5:88966936   8000000.0     2.5 m      18.0 s       14.4%    17.4 m      14.9 m 
+INFO  20:48:27,048 ProgressMeter -   chr5:90283536   9000000.0     3.0 m      20.0 s       16.6%    18.1 m      15.1 m 
+INFO  20:49:06,005 ProgressMeter -   chr5:90424936       1.0E7     3.7 m      22.0 s       16.8%    21.8 m      18.1 m 
+INFO  20:49:36,010 ProgressMeter -   chr5:90595436       1.0E7     4.2 m      25.0 s       17.1%    24.4 m      20.2 m 
+INFO  20:50:06,015 ProgressMeter -   chr5:90596036       1.0E7     4.7 m      28.0 s       17.1%    27.3 m      22.6 m 
+INFO  20:50:36,055 ProgressMeter -   chr5:90596736       1.0E7     5.2 m      31.0 s       17.1%    30.2 m      25.1 m 
+INFO  20:51:06,059 ProgressMeter -   chr5:90605536       1.0E7     5.7 m      34.0 s       17.1%    33.1 m      27.5 m 
+INFO  20:51:36,064 ProgressMeter -   chr5:90608836       1.0E7     6.2 m      37.0 s       17.1%    36.0 m      29.9 m 
+INFO  20:52:06,065 ProgressMeter -   chr5:90610836       1.0E7     6.7 m      40.0 s       17.1%    38.9 m      32.3 m 
+INFO  20:52:36,071 ProgressMeter -   chr5:90617836       1.0E7     7.2 m      43.0 s       17.1%    41.8 m      34.7 m 
+INFO  20:53:06,072 ProgressMeter -   chr5:90622436       1.0E7     7.7 m      46.0 s       17.1%    44.7 m      37.1 m 
+INFO  20:53:37,867 ProgressMeter -   chr5:90623436       1.0E7     8.2 m      49.0 s       17.1%    47.8 m      39.6 m 
+INFO  20:54:07,871 ProgressMeter -   chr5:90631036       1.0E7     8.7 m      52.0 s       17.2%    50.7 m      42.0 m 
+INFO  20:54:37,872 ProgressMeter -   chr5:90644036       1.0E7     9.2 m      55.0 s       17.2%    53.6 m      44.4 m 
+INFO  20:55:07,874 ProgressMeter -   chr5:90657336       1.0E7     9.7 m      58.0 s       17.2%    56.4 m      46.7 m 
+INFO  20:55:37,875 ProgressMeter -   chr5:90671736       1.0E7    10.2 m      61.0 s       17.2%    59.2 m      49.0 m 
+INFO  20:56:07,876 ProgressMeter -   chr5:90689436       1.0E7    10.7 m      64.0 s       17.2%    62.0 m      51.3 m 
+INFO  20:56:37,878 ProgressMeter -   chr5:90712136       1.0E7    11.2 m      67.0 s       17.3%    64.8 m      53.6 m 
+INFO  20:57:07,879 ProgressMeter -   chr5:90734236       1.0E7    11.7 m      70.0 s       17.3%    67.5 m      55.8 m 
+INFO  20:57:37,955 ProgressMeter -   chr5:90756836       1.0E7    12.2 m      73.0 s       17.4%    70.3 m      58.1 m 
+INFO  20:58:07,956 ProgressMeter -   chr5:90789336       1.0E7    12.7 m      76.0 s       17.4%    72.9 m      60.2 m 
+INFO  20:58:37,957 ProgressMeter -   chr5:90813136       1.0E7    13.2 m      79.0 s       17.5%    75.6 m      62.4 m 
+INFO  20:59:07,959 ProgressMeter -   chr5:90831436       1.0E7    13.7 m      82.0 s       17.5%    78.3 m      64.6 m 
+INFO  20:59:37,960 ProgressMeter -   chr5:90846936       1.0E7    14.2 m      85.0 s       17.5%    81.1 m      66.9 m 
+INFO  21:00:07,965 ProgressMeter -   chr5:90901436       1.0E7    14.7 m      88.0 s       17.6%    83.5 m      68.8 m 
+INFO  21:00:37,966 ProgressMeter -   chr5:91661636       1.1E7    15.2 m      82.0 s       18.9%    80.6 m      65.4 m 
+INFO  21:01:07,968 ProgressMeter -   chr5:93541536       1.3E7    15.7 m      72.0 s       22.0%    71.4 m      55.7 m 
+INFO  21:01:37,969 ProgressMeter -   chr5:95479736       1.5E7    16.2 m      64.0 s       25.2%    64.2 m      48.0 m 
+INFO  21:02:07,971 ProgressMeter -   chr5:97372436       1.7E7    16.7 m      58.0 s       28.4%    58.8 m      42.1 m 
+INFO  21:02:37,972 ProgressMeter -   chr5:99259236       1.8E7    17.2 m      57.0 s       31.5%    54.5 m      37.3 m 
+INFO  21:03:07,974 ProgressMeter -  chr5:101123036       2.0E7    17.7 m      53.0 s       34.6%    51.1 m      33.4 m 
+INFO  21:03:37,975 ProgressMeter -  chr5:102973136       2.2E7    18.2 m      49.0 s       37.7%    48.2 m      30.0 m 
+INFO  21:04:07,977 ProgressMeter -  chr5:104887736       2.4E7    18.7 m      46.0 s       40.9%    45.7 m      27.0 m 
+INFO  21:04:37,978 ProgressMeter -  chr5:106755236       2.6E7    19.2 m      44.0 s       44.0%    43.6 m      24.4 m 
+INFO  21:05:07,980 ProgressMeter -  chr5:108692736       2.8E7    19.7 m      42.0 s       47.3%    41.7 m      22.0 m 
+INFO  21:05:37,981 ProgressMeter -  chr5:110637336       3.0E7    20.2 m      40.0 s       50.5%    40.0 m      19.8 m 
+INFO  21:06:07,983 ProgressMeter -  chr5:112557536       3.2E7    20.7 m      38.0 s       53.7%    38.6 m      17.9 m 
+INFO  21:06:37,984 ProgressMeter -  chr5:114472036       3.4E7    21.2 m      37.0 s       56.9%    37.3 m      16.1 m 
+INFO  21:07:07,985 ProgressMeter -  chr5:116344736       3.6E7    21.7 m      36.0 s       60.0%    36.2 m      14.5 m 
+INFO  21:07:37,987 ProgressMeter -  chr5:118242136       3.7E7    22.2 m      36.0 s       63.2%    35.1 m      12.9 m 
+INFO  21:08:07,988 ProgressMeter -  chr5:120143336       3.9E7    22.7 m      34.0 s       66.3%    34.2 m      11.5 m 
+INFO  21:08:37,989 ProgressMeter -  chr5:122031836       4.1E7    23.2 m      33.0 s       69.5%    33.4 m      10.2 m 
+INFO  21:09:07,992 ProgressMeter -  chr5:123976136       4.3E7    23.7 m      33.0 s       72.7%    32.6 m       8.9 m 
+INFO  21:09:37,993 ProgressMeter -  chr5:125942836       4.5E7    24.2 m      32.0 s       76.0%    31.8 m       7.6 m 
+INFO  21:10:07,994 ProgressMeter -  chr5:127863336       4.7E7    24.7 m      31.0 s       79.2%    31.2 m       6.5 m 
+INFO  21:10:37,996 ProgressMeter -  chr5:129821336       4.9E7    25.2 m      30.0 s       82.5%    30.6 m       5.4 m 
+INFO  21:11:07,997 ProgressMeter -  chr5:131755536       5.1E7    25.7 m      30.0 s       85.7%    30.0 m       4.3 m 
+INFO  21:11:37,998 ProgressMeter -  chr5:133614536       5.3E7    26.2 m      29.0 s       88.8%    29.5 m       3.3 m 
+INFO  21:12:07,999 ProgressMeter -  chr5:135445736       5.5E7    26.7 m      29.0 s       91.8%    29.1 m       2.4 m 
+INFO  21:12:38,001 ProgressMeter -  chr5:137400736       5.7E7    27.2 m      28.0 s       95.1%    28.6 m      84.0 s 
+INFO  21:13:08,002 ProgressMeter -  chr5:139275436       5.8E7    27.7 m      28.0 s       98.2%    28.2 m      30.0 s 
+INFO  21:13:25,761 ProgressMeter -            done       6.0E7    28.0 m      28.0 s      100.0%    28.0 m       0.0 s 
+INFO  21:13:25,761 ProgressMeter - Total runtime 1680.59 secs, 28.01 min, 0.47 hours 
+------------------------------------------------------------------------------------------
+Done. ------------------------------------------------------------------------------------------

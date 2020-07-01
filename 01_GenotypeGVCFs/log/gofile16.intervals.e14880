@@ -1,0 +1,49 @@
+INFO  06:33:21,279 HelpFormatter - ------------------------------------------------------------------------------------ 
+INFO  06:33:21,304 HelpFormatter - The Genome Analysis Toolkit (GATK) v3.8-1-0-gf15c1c3ef, Compiled 2018/02/19 05:43:50 
+INFO  06:33:21,304 HelpFormatter - Copyright (c) 2010-2016 The Broad Institute 
+INFO  06:33:21,305 HelpFormatter - For support and documentation go to https://software.broadinstitute.org/gatk 
+INFO  06:33:21,305 HelpFormatter - [Sat Jun 06 06:33:21 CST 2020] Executing on Linux 2.6.32-358.el6.x86_64 amd64 
+INFO  06:33:21,305 HelpFormatter - Java HotSpot(TM) 64-Bit Server VM 1.8.0_101-b13 
+INFO  06:33:21,309 HelpFormatter - Program Args: -T GenotypeGVCFs -nt 10 -R /data/szj/software/gatk3.8/Homo_sapiens_assembly38.fasta -V /data/szj/1000C/16BD45807114.g.vcf.gz -V /data/szj/1000C/16BD45807514.g.vcf.gz -V /data/szj/1000C/16BD45807714.g.vcf.gz -V /data/szj/1000C/16BD45808014.g.vcf.gz -V /data/szj/1000C/16BD45808614.g.vcf.gz -L /data/szj/software/gatk3.8/interval_test/300GATK/00intervals/file16.intervals -o /data/szj/software/gatk3.8/interval_test/300GATK/011vcfs_intervals_result//5file16.intervalsGenotypeGVCFs.vcf 
+INFO  06:33:21,315 HelpFormatter - Executing as xtlyszj@node1 on Linux 2.6.32-358.el6.x86_64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_101-b13. 
+INFO  06:33:21,316 HelpFormatter - Date/Time: 2020/06/06 06:33:21 
+INFO  06:33:21,316 HelpFormatter - ------------------------------------------------------------------------------------ 
+INFO  06:33:21,316 HelpFormatter - ------------------------------------------------------------------------------------ 
+INFO  06:33:21,376 NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/data/szj/software/gatk3.8/GenomeAnalysisTK.jar!/com/intel/gkl/native/libgkl_compression.so 
+INFO  06:33:21,413 GenomeAnalysisEngine - Deflater: IntelDeflater 
+INFO  06:33:21,414 GenomeAnalysisEngine - Inflater: IntelInflater 
+INFO  06:33:21,414 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  06:33:23,634 GenomeAnalysisEngine - Downsampling Settings: Method: BY_SAMPLE, Target Coverage: 1000 
+INFO  06:33:27,490 IntervalUtils - Processing 60000000 bp from intervals 
+WARN  06:33:27,500 IndexDictionaryUtils - Track variant doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  06:33:27,501 IndexDictionaryUtils - Track variant2 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  06:33:27,501 IndexDictionaryUtils - Track variant3 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  06:33:27,501 IndexDictionaryUtils - Track variant4 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  06:33:27,501 IndexDictionaryUtils - Track variant5 doesn't have a sequence dictionary built in, skipping dictionary validation 
+INFO  06:33:27,514 MicroScheduler - Running the GATK in parallel mode with 10 total threads, 1 CPU thread(s) for each of 10 data thread(s), of 20 processors available on this machine 
+INFO  06:33:27,683 GenomeAnalysisEngine - Preparing for traversal 
+INFO  06:33:27,685 GenomeAnalysisEngine - Done preparing for traversal 
+INFO  06:33:27,685 ProgressMeter - [INITIALIZATION COMPLETE; STARTING PROCESSING] 
+INFO  06:33:27,685 ProgressMeter -                 | processed |    time |    per 1M |           |   total | remaining 
+INFO  06:33:27,685 ProgressMeter -        Location |     sites | elapsed |     sites | completed | runtime |   runtime 
+WARN  06:33:28,338 StrandBiasTest - StrandBiasBySample annotation exists in input VCF header. Attempting to use StrandBiasBySample values to calculate strand bias annotation values. If no sample has the SB genotype annotation, annotation may still fail. 
+WARN  06:33:28,338 InbreedingCoeff - Annotation will not be calculated. InbreedingCoeff requires at least 10 unrelated samples. 
+WARN  06:33:28,339 StrandBiasTest - StrandBiasBySample annotation exists in input VCF header. Attempting to use StrandBiasBySample values to calculate strand bias annotation values. If no sample has the SB genotype annotation, annotation may still fail. 
+INFO  06:33:28,339 GenotypeGVCFs - Notice that the -ploidy parameter is ignored in GenotypeGVCFs tool as this is automatically determined by the input variant files 
+WARN  06:33:30,074 HaplotypeScore - Annotation will not be calculated, must be called from UnifiedGenotyper, not GenotypeGVCFs 
+WARN  06:33:41,119 ExactAFCalculator - This tool is currently set to genotype at most 6 alternate alleles in a given context, but the context at chr5: 24362633 has 7 alternate alleles so only the top alleles will be used; see the --max_alternate_alleles argument. Unless the DEBUG logging level is used, this warning message is output just once per run and further warnings are suppressed. 
+INFO  06:33:57,741 ProgressMeter -   chr5:29500736         0.0    30.0 s      49.7 w       15.3%     3.3 m       2.8 m 
+INFO  06:34:27,747 ProgressMeter -   chr5:30004336         0.0    60.0 s      99.3 w       16.1%     6.2 m       5.2 m 
+INFO  06:34:57,748 ProgressMeter -   chr5:39529336       1.0E7    90.0 s       9.0 s       32.0%     4.7 m       3.2 m 
+INFO  06:35:27,749 ProgressMeter -   chr5:40086736       1.0E7   120.0 s      12.0 s       32.9%     6.1 m       4.1 m 
+INFO  06:35:57,751 ProgressMeter -   chr5:51517336       2.2E7     2.5 m       6.0 s       52.0%     4.8 m       2.3 m 
+INFO  06:36:27,769 ProgressMeter -   chr5:53430936       2.4E7     3.0 m       7.0 s       55.2%     5.4 m       2.4 m 
+INFO  06:36:57,772 ProgressMeter -   chr5:61576536       3.2E7     3.5 m       6.0 s       68.7%     5.1 m      95.0 s 
+INFO  06:37:27,773 ProgressMeter -   chr5:63488136       3.4E7     4.0 m       7.0 s       71.9%     5.6 m      93.0 s 
+INFO  06:37:57,774 ProgressMeter -   chr5:71357736       4.2E7     4.5 m       6.0 s       85.0%     5.3 m      47.0 s 
+INFO  06:38:27,776 ProgressMeter -   chr5:77362736       4.8E7     5.0 m       6.0 s       95.0%     5.3 m      15.0 s 
+INFO  06:38:57,777 ProgressMeter -   chr5:79725136       5.4E7     5.5 m       6.0 s       99.0%     5.6 m       3.0 s 
+INFO  06:39:27,306 ProgressMeter -            done       6.0E7     6.0 m       5.0 s      100.0%     6.0 m       0.0 s 
+INFO  06:39:27,307 ProgressMeter - Total runtime 359.62 secs, 5.99 min, 0.10 hours 
+------------------------------------------------------------------------------------------
+Done. ------------------------------------------------------------------------------------------

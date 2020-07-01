@@ -1,0 +1,37 @@
+INFO  20:47:57,676 HelpFormatter - ------------------------------------------------------------------------------------ 
+INFO  20:47:57,692 HelpFormatter - The Genome Analysis Toolkit (GATK) v3.8-1-0-gf15c1c3ef, Compiled 2018/02/19 05:43:50 
+INFO  20:47:57,692 HelpFormatter - Copyright (c) 2010-2016 The Broad Institute 
+INFO  20:47:57,692 HelpFormatter - For support and documentation go to https://software.broadinstitute.org/gatk 
+INFO  20:47:57,692 HelpFormatter - [Fri Jun 05 20:47:57 CST 2020] Executing on Linux 2.6.32-358.el6.x86_64 amd64 
+INFO  20:47:57,693 HelpFormatter - Java HotSpot(TM) 64-Bit Server VM 1.8.0_101-b13 
+INFO  20:47:57,697 HelpFormatter - Program Args: -T GenotypeGVCFs -R /data/szj/software/gatk3.8/Homo_sapiens_assembly38.fasta -V /data/szj/1000C/16BD45807114.g.vcf.gz -V /data/szj/1000C/16BD45807514.g.vcf.gz -V /data/szj/1000C/16BD45807714.g.vcf.gz -V /data/szj/1000C/16BD45808014.g.vcf.gz -V /data/szj/1000C/16BD45808614.g.vcf.gz -L /data/szj/software/gatk3.8/interval_test/300GATK/00intervals/file7.intervals -o /data/szj/software/gatk3.8/interval_test/300GATK/011vcfs_intervals_result//5file7.intervalsGenotypeGVCFs.vcf 
+INFO  20:47:57,700 HelpFormatter - Executing as xtlyszj@node19 on Linux 2.6.32-358.el6.x86_64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_101-b13. 
+INFO  20:47:57,711 HelpFormatter - Date/Time: 2020/06/05 20:47:57 
+INFO  20:47:57,712 HelpFormatter - ------------------------------------------------------------------------------------ 
+INFO  20:47:57,712 HelpFormatter - ------------------------------------------------------------------------------------ 
+INFO  20:47:57,766 NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/data/szj/software/gatk3.8/GenomeAnalysisTK.jar!/com/intel/gkl/native/libgkl_compression.so 
+INFO  20:47:57,811 GenomeAnalysisEngine - Deflater: IntelDeflater 
+INFO  20:47:57,812 GenomeAnalysisEngine - Inflater: IntelInflater 
+INFO  20:47:57,813 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  20:47:59,666 GenomeAnalysisEngine - Downsampling Settings: Method: BY_SAMPLE, Target Coverage: 1000 
+INFO  20:48:14,235 IntervalUtils - Processing 60000000 bp from intervals 
+WARN  20:48:14,294 IndexDictionaryUtils - Track variant doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  20:48:14,294 IndexDictionaryUtils - Track variant2 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  20:48:14,294 IndexDictionaryUtils - Track variant3 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  20:48:14,301 IndexDictionaryUtils - Track variant4 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  20:48:14,301 IndexDictionaryUtils - Track variant5 doesn't have a sequence dictionary built in, skipping dictionary validation 
+INFO  20:48:23,423 GenomeAnalysisEngine - Preparing for traversal 
+INFO  20:48:24,130 GenomeAnalysisEngine - Done preparing for traversal 
+INFO  20:48:24,132 ProgressMeter - [INITIALIZATION COMPLETE; STARTING PROCESSING] 
+INFO  20:48:24,132 ProgressMeter -                 | processed |    time |    per 1M |           |   total | remaining 
+INFO  20:48:24,133 ProgressMeter -        Location |     sites | elapsed |     sites | completed | runtime |   runtime 
+WARN  20:48:44,414 StrandBiasTest - StrandBiasBySample annotation exists in input VCF header. Attempting to use StrandBiasBySample values to calculate strand bias annotation values. If no sample has the SB genotype annotation, annotation may still fail. 
+WARN  20:48:44,415 InbreedingCoeff - Annotation will not be calculated. InbreedingCoeff requires at least 10 unrelated samples. 
+WARN  20:48:44,425 StrandBiasTest - StrandBiasBySample annotation exists in input VCF header. Attempting to use StrandBiasBySample values to calculate strand bias annotation values. If no sample has the SB genotype annotation, annotation may still fail. 
+INFO  20:48:44,425 GenotypeGVCFs - Notice that the -ploidy parameter is ignored in GenotypeGVCFs tool as this is automatically determined by the input variant files 
+INFO  20:48:55,272 ProgressMeter -        Starting         0.0    30.0 s      50.3 w      100.0%    30.0 s       0.0 s 
+WARN  20:49:02,102 HaplotypeScore - Annotation will not be calculated, must be called from UnifiedGenotyper, not GenotypeGVCFs 
+INFO  20:49:25,681 ProgressMeter -  chr2:111058879         0.0    61.0 s     101.8 w        0.0%    66.4 h      66.4 h 
+INFO  20:50:26,839 ProgressMeter -  chr2:111396179         0.0     2.0 m     202.9 w        0.6%     5.8 h       5.7 h 
+INFO  20:50:56,895 ProgressMeter -  chr2:111491179         0.0     2.5 m     252.5 w        0.7%     5.7 h       5.6 h 
+Java HotSpot(TM) 64-Bit Server VM warning: INFO: os::commit_memory(0x0000000690400000, 4213178368, 0) failed; error='Cannot allocate memory' (errno=12)
